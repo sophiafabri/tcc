@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TCC - Sensor de Iluminação - GY'S</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="https://static.vecteezy.com/ti/vetor-gratis/p1/35665199-plano-ilustracao-do-fofa-luz-lampada-desenho-animado-em-isolado-fundo-gratis-vetor.jpg" type="image/x-icon">
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Sistema de Iluminação IoT</h1>
+
+      <!-- Lâmpada -->
+      <div class="bulb-area">
+        <svg class="bulb" viewBox="0 0 64 64" id="bulbSvg">
+          <path id="bulbGlass" d="M32 6c-7.2 0-13 5.8-13 12.9 0 4.2 2.1 7.9 4.9 10.5.7.6 1.1 1.5 1.1 2.4V39c0 1.1.9 2 2 2h9.9c1.1 0 2-.9 2-2v-6.2c0-.9.4-1.8 1.1-2.4 2.8-2.6 4.9-6.3 4.9-10.5C45 11.8 39.2 6 32 6z"
+          fill="#E0E6E9" stroke="#222" stroke-width="1.2"/>
+          <path d="M26 42h12v2a3 3 0 0 1-3 3H29a3 3 0 0 1-3-3v-2z" fill="#bfbfbf" stroke="#222" stroke-width="1"/>
+        </svg>
+      </div>
+
+      <!-- Botões -->
+      <div class="controls">
+        <button id="btnOn" class="btn btn-ligar">Ligar</button>
+        <button id="btnOff" class="btn btn-desligar">Desligar</button>
+        <button id="btnClear" class="btn btn-limpar">Limpar Histórico</button>
+      </div>
+
+      <!-- Status -->
+      <div class="status">
+        Status: <span id="statusValue" class="value-off">Lâmpada desligada</span>
+      </div>
+
+      <!-- Histórico -->
+      <div class="history">
+        <strong>Histórico:</strong>
+        <ul id="historyList"></ul>
+      </div>
+
+      <div class="footer">GY'S ©</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
